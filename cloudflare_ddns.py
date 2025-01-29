@@ -45,7 +45,7 @@ def update_dns_record(ip_address):
     result = response.json()
     
     if result.get("success"):
-        print(f"DNS Updated: {SUBDOMAIN} → {ip_address}")
+        print(f"DNS Updated: {SUBDOMAIN} -> {ip_address}")
     else:
         print(f"Error updating DNS: {result}")
 
